@@ -34,4 +34,26 @@ app.post('/books', async (request, response) => {
     response.status(200).json(newBook)
 })
 
+app.put('/books/:id', async (request, response) => {
+    // console.log(request.params.id);
+    try {
+        await Book.findByIdAndUpdate(request.params.id, request.body)
+        response.status(204).send()
+    } catch(err) {
+        response.send(err)
+    }
+})
+
+app.delete('/books/:id' , async (request, response) => {
+    console.log(request)
+    try {
+        const id = request.params.id;
+        console.log(id)
+        const deletedBook = await Book.findByIdAndDelete(id)
+        response.status(200).json(deletedBook)
+    } catch (err) {
+        response.status(500).json(err)
+    }
+})
+
 app.listen(PORT, () => console.log(`summoning a server on  PORT: ${PORT}`))
