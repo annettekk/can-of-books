@@ -12,7 +12,7 @@ export default function Main() {
     // get books READ
 
     async function getBooks() {
-        let API = 'http://localhost:8088/books'
+        let API = 'https://can-of-books-wui7.onrender.com/books'
         const res =await axios.get(API);
         console.log(res.data)
         setBooks(res.data)
@@ -22,14 +22,14 @@ export default function Main() {
     // newBooks is our 'formData'
 
     const handleAddBooks = async newBookFormData => {
-        const res = await axios.post('http://localhost:8088/books', newBookFormData)
+        const res = await axios.post('https://can-of-books-wui7.onrender.com/books', newBookFormData)
         setBooks([...books, res.data])
     }
 
     // delete books
     const handleDelete = async(id) => {
         console.log('clicked')
-        const res = await axios.delete(`http://localhost:8088/books/${id}`)
+        const res = await axios.delete(`https://can-of-books-wui7.onrender.com/books/${id}`)
         console.log(res)
         getBooks()
     }
@@ -37,7 +37,7 @@ export default function Main() {
     
     // update books
     const handleUpdateBooks = async (book) => {
-        await axios.put(`http://localhost:8088/books/${book._id}`, book)
+        await axios.put(`https://can-of-books-wui7.onrender.com/books/${book._id}`, book)
         
         getBooks();
     }
