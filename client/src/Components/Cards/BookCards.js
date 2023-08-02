@@ -7,7 +7,7 @@ import Form from '..Form/Form';
 export default function BookCards({books, handleDelete, handleUpdateBooks}) {
 
 //use to update movies being displayed   
-  return (
+return (
     <div className='gallery-main-flex'>
         {books.map((movie, index) => {
             return (
@@ -24,5 +24,5 @@ export default function BookCards({books, handleDelete, handleUpdateBooks}) {
         })}
     </div>
     <div>BookCards</div>
-  )
+)
 }
