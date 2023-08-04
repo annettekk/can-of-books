@@ -1,7 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>Header</div>
-  )
+    <div>
+      <h1>Can of Books</h1>
+      <nav>
+        <ul>
+          <li className="home">
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li className="about">
+            <Link to={"/about"}>About</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }

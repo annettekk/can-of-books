@@ -1,0 +1,35 @@
+h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    background-color: #19535F;
+    padding: .5rem;
+}
+
+nav {
+    font-size: 1.5rem;
+    /*background-color: #93B5C6;*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #93B5C6;   
+}
+
+/* .home {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: .5rem;
+}
+
+.about {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: .5rem;
+} */
