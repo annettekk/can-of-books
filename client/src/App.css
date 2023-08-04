@@ -8,12 +8,12 @@
 } */
 
 /* body {
-  background: linear-gradient(-45deg, #da7070,#3542b4, #7ead41, #c00f3b),
-  url(./assets);
+  background: linear-gradient(-45deg, #da7070, #3542b4, #7ead41, #c00f3b),
+    url(./assets);
   filter: contrast(100%);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 } */
 
 /* @keyframes gardient {
