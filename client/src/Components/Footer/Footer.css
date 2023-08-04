@@ -1,6 +1,7 @@
 footer {
   margin: auto;
   text-align: center;
-  color: black;
+  color: white;
   background-color: #19535f;
+  font-family: monospace;
 }
