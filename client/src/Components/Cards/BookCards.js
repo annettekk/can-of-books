@@ -12,7 +12,9 @@ export default function BookCards({ books, handleDelete, handleUpdateBooks }) {
         return (
           <div key={book._id}>
             <div>
-              <p onClick={() => handleDelete(book._id)}>X</p>
+              <p className="para" onClick={() => handleDelete(book._id)}>
+                X
+              </p>
               <h3>{book.name}</h3>
               <img src={book.img_url} alt="book" />
               <p>
